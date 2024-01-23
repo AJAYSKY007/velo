@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+   
+   <head>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, minimum-scale = 1, user-scalable = no, minimal-ui" />
+        <meta name = "apple-mobile-web-app-capable" content = "yes" />
+        <meta name = "apple-mobile-web-app-status-bar-style" content = "black" />
+        <title>Login-velo</title>
+        <!-------------------------------- FrameWork-7 ios -------------------------------->
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.min.css" />
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.colors.min.css" />
+        <!-------------------------------- Font -------------------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <!-------------------------------- Css -------------------------------->
+        <link rel="stylesheet" href="style.css">
+        <!-------------------------------- Icon -------------------------------->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    
+   </head>
+   
+   <body>
+        <div class = "statusbar-overlay"></div>
+        <div class = "panel-overlay"></div>
+        
+        <div class = "panel panel-right panel-reveal">
+            <div class = "content-block">
+                <p>Contents goes here...</p>
+            </div>
+        </div>
+        
+        <div class = "views">
+            <div class = "view view-main">
+         
+                <div class = "pages navbar-through toolbar-through">
+                <div data-page = "index" class = "page">
+                <div class = "page-content">
+
+                    <div class="splash-screen">
+                        <h1 class="login-heading"><span class="color-primary font-1">VELO</span><span class="font-1">BIKE</span> </h1>
+                    </div>
+
+                    <form action="">
+                        <div class="login-input">
+                            <input type="number" class="input-no" name="lognum" id="lognum">
+                        </div>
+                        <div class = "content-block">
+                            <p class = "buttons-row">
+                               <a href = "profile.html" class = "button button-big">NEXT</a>
+                            </p>
+                         </div>
+                         <p class="font-2">
+                            You'll receive an SMS to verify identity, but we'll never spam
+                         </p>
+                         <p class="px18">OR</p>
+                         <div class = "content-block">
+                            <p class = "buttons-row">
+                                <a href = "#" class = "button-fb button button-big">
+                                    <i class="fb-icon uil uil-facebook-f"></i>Continue with Facebook
+                                </a>
+                             </p>
+                        </div>
+                        <p class="font-2">
+                            By signing up, you agree to our <span class="font-2-span">Terms & Conditions</span> and <span class="font-2-span">Privacy Policy.</span>
+                        </p>
+                    </form>
+
+                    <!-- <div class = "content-block">
+                        <p class = "buttons-row">
+                           <a href = "#" class = "button button-big">NEXT</a>
+                        </p>
+                     </div> -->
+                </div> 
+                </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        <script type = "text/javascript" 
+            src = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/js/framework7.min.js"></script>
+        
+        <script>
+            // here initialize the app
+            var myApp = new Framework7();
+
+            // If your using custom DOM library, then save it to $$ variable
+            var $$ = Dom7;
+
+            // Add the view
+            var mainView = myApp.addView('.view-main', {
+                
+                // enable the dynamic navbar for this view:
+                dynamicNavbar: true
+            });
+
+            //use the 'pageInit' event handler for all pages
+            $$(document).on('pageInit', function (e) {
+            
+                //get page data from event data
+                var page = e.detail.page;
+
+                if (page.name === 'blog') {
+                
+                // you will get below message in alert box when page with data-page attribute is equal to "about"
+                myApp.alert('Here its your About page');
+                }
+            })
+        </script>
+   </body>
+
+</html>
