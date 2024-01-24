@@ -152,7 +152,7 @@ form .login-input .input-no {
 }
 /*------------------------------- wallet -------------------------------*/
 .wallet-nav {
-    background-color: #ff3333;
+    background-color: #ff3333 !important;
 }
 .wallet-back-arrow {
     color: #ffffff;
