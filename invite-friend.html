@@ -5,7 +5,7 @@
         <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, minimum-scale = 1, user-scalable = no, minimal-ui" />
         <meta name = "apple-mobile-web-app-capable" content = "yes" />
         <meta name = "apple-mobile-web-app-status-bar-style" content = "black" />
-        <title>Login-velo</title>
+        <title>Velobikes</title>
         <!-------------------------------- FrameWork-7 ios -------------------------------->
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.min.css" />
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.colors.min.css" />
@@ -13,10 +13,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.cdnfonts.com/css/sf-ui-display" rel="stylesheet">
         <!-------------------------------- Css -------------------------------->
         <link rel="stylesheet" href="style.css">
         <!-------------------------------- Icon -------------------------------->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        
 
     
    </head>
@@ -33,57 +36,50 @@
         
         <div class = "views">
             <div class = "view view-main">
-
-                    <div class="navbar login-nav">
-                        <div class="navbar-inner">
-                            <div class="center">
-                            </div>
+            
+                <div class = "navbar">
+                    <div class = "navbar-inner">
+                        <div class = "left">
+                            <a href="index.html">
+                                <i class="if-back-arrow uil uil-angle-left-b"></i>
+                            </a>
                         </div>
+                        <div class = "center font-2">Invite Friends</div>
+                        <!-- <div class = "right font-2 font-color-2">
+                            <a class="color-primary" href="wallet-page.html">Done</a>
+                        </div> -->
                     </div>
-         
+                </div>
+                
                 <div class = "pages navbar-through toolbar-through">
-                <div data-page = "index" class = "page no-navbar">
+                <div data-page = "index" class = "page">
                 <div class = "page-content">
-
-                    <div class="splash-screen">
-                        <h1 class="login-heading"><span class="color-primary font-1">VELO</span><span class="font-1">BIKE</span> </h1>
+                    
+                    <div class="invite-section">
+                        <div class = "card demo-card-header-pic">
+                            <div class="if-img-container">
+                                <img class="if-img" src="img/if-bg.jpg" alt="">
+                            </div>
+                            
+                            <div class = "card-content">
+                               <div class = "card-content-inner">
+                                  <p class = "align-center if-line-1 color-gray">Share your code with friends to receive <span class="if-span">60 minutes</span> of complimentary riding credits.</p>
+                                  <p class="color-gray align-center">Your invitation code</p>
+                                  <p class="color-primary align-center if-promo-code">n8XKM453</p>
+                               </div>
+                            </div>
+                            
+                         </div>
+                    </div>
+                    <div class="invite-section-2">
+                        <div class = "content-block">
+                            <p><a href = "payment-mehod.html" class = "button button-big"> <span class="font-1">Share with your friends</span> </a></p>
+                         </div>
                     </div>
 
-                    <form action=""> 
-                        <div class="login-input">
-                            <input type="number" class="input-no" name="lognum" id="lognum">
-                        </div>
-                        <div class = "content-block">
-                            <p class = "buttons-row">
-                               <a href = "profile-page.html" class = "button button-big">NEXT</a>
-                            </p>
-                         </div>
-                         <p class="font-2">
-                            You'll receive an SMS to verify identity, but we'll never spam
-                         </p>
-                         <p class="px18">OR</p>
-                         <div class = "content-block">
-                            <p class = "buttons-row">
-                                <a href = "#" class = "button-fb button button-big">
-                                    <i class="fb-icon uil uil-facebook-f"></i>Continue with Facebook
-                                </a>
-                             </p>
-                        </div>
-                        <p class="font-2">
-                            By signing up, you agree to our <span class="font-2-span">Terms & Conditions</span> and <span class="font-2-span">Privacy Policy.</span>
-                        </p>
-                    </form>
-
-                    <!-- <div class = "content-block">
-                        <p class = "buttons-row">
-                           <a href = "#" class = "button button-big">NEXT</a>
-                        </p>
-                     </div> -->
+                </div>
+                </div>
                 </div> 
-                </div>
-                </div>
-                
-                
             </div>
         </div>
         
