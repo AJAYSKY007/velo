@@ -18,13 +18,17 @@
     color: #333333;
     font-size: 25px;
 }
+.wallet-page .navbar .left .back-arrow {
+    color: #ffffff;
+    font-size: 25px;
+}
 .navbar {
     position: relative;
 }
 .navbar:after {
     content: '';
     position: absolute;
-    background-color: #ffffff;
+    background-color: #ffffff00;
 }
 .font-color-2 {
     color: #a0a0a0;
@@ -39,7 +43,9 @@
     background: #ffffff;
 }
 /*------------------------------- splash screen -------------------------------*/
-
+.index-nav {
+    background-color: #ffffff;
+}
 .splash-screen {
     display: flex;
     width: 100%;
@@ -50,7 +56,11 @@
     font-size: 50px;
     color: #333333;
 }
+
 /*------------------------------- login screen -------------------------------*/
+.login-nav {
+    background-color: #ffffff;
+}
 .splash-screen .login-heading {
     margin-top: 80px;
     font-size: 50px;
@@ -106,10 +116,9 @@ form .login-input .input-no {
 }
 
 /*------------------------------- Profile -------------------------------*/
-.navbar {
+.profile-nav {
     background-color: #ffffff;
 }
-
 .profile-section .card {
     margin: 0 !important;
 }
@@ -141,8 +150,66 @@ form .login-input .input-no {
 .profile-section .profile-img-card{
     padding: 15px 0;
 }
-
-
+/*------------------------------- wallet -------------------------------*/
+.wallet-nav {
+    background-color: #ff3333;
+}
+.wallet-back-arrow {
+    color: #ffffff;
+    font-size: 25px;
+}
+.color-fff {
+    color: #ffffff;
+}
+.navbar .center {
+    font-weight: normal !important;
+}
+.wallet-content .card {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #ff3333;
+}
+.wallet-content .card .card-content-inner { 
+    padding: 0;
+}
+.wallet-content .card .card-footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.wallet-content .card .wallet-amount {
+    font-size: 70px;
+    color: #ffffff;
+    margin: 40px 0 20px 0;
+}
+.card-footer {
+    position: relative;
+}
+.card-footer:before {
+    content: '';
+    position: absolute;
+    height: 0px;
+}
+.wallet-content-2 .list-block,
+.wallet-content-2 .list-block .card {
+    margin: 0 !important;
+}
+.wallet-content-2 .card .card-content {
+    font-size: 18px;
+}
+.wallet-content-2 .card .card-content .wallet-us {
+    font-size: 15px;
+    color: #a0a0a0;
+}
+.wallet-content-2 .card .card-content .wallet-col-left {
+    color: #333333;
+}
+.wallet-content-2 .card .card-content .wallet-cash {
+    color: #ff3333;
+}
 
 
 
