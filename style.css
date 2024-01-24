@@ -210,6 +210,22 @@ form .login-input .input-no {
 .wallet-content-2 .card .card-content .wallet-cash {
     color: #ff3333;
 }
+/*------------------------------- Add new card -------------------------------*/
+.add-card-section .card {
+    margin: 0;
+}
+.add-card-img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.add-card-img .card-img {
+    width: 300px;
+    margin: 10px;
+} 
+.content-block-title {
+    font-size: 13px;
+}
 
 
 
