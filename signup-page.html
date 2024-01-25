@@ -5,7 +5,7 @@
         <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, minimum-scale = 1, user-scalable = no, minimal-ui" />
         <meta name = "apple-mobile-web-app-capable" content = "yes" />
         <meta name = "apple-mobile-web-app-status-bar-style" content = "black" />
-        <title>Velobikes</title>
+        <title>Login-velo</title>
         <!-------------------------------- FrameWork-7 ios -------------------------------->
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.min.css" />
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.colors.min.css" />
@@ -13,8 +13,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-        <link href="https://fonts.cdnfonts.com/css/sf-ui-display" rel="stylesheet">
         <!-------------------------------- Css -------------------------------->
         <link rel="stylesheet" href="style.css">
         <!-------------------------------- Icon -------------------------------->
@@ -35,24 +33,64 @@
         
         <div class = "views">
             <div class = "view view-main">
-                    <div class="navbar index-nav">
+
+                    <div class="navbar login-nav">
                         <div class="navbar-inner">
-                            <div class="center">
+                            <div class = "left">
+                                <a href="index.html">
+                                <i class="back-arrow uil uil-angle-left-b"></i>
+                                </a>
+                            </div>
+                            <div class = "center font-2">Sign Up</div>
+                            <div class = "right font-2">
                             </div>
                         </div>
                     </div>
-            
-                
-                
+         
                 <div class = "pages navbar-through toolbar-through">
                 <div data-page = "index" class = "page">
-                    <div class = "page-content">
-                    <a class="home-btn" href="login-page.html">
-                        <div class="splash-screen">
-                            <h1><span class="color-primary font-1">VELO</span><span class="font-1">BIKE</span></h1>
-                        </div>
-                    </a>
+                <div class = "page-content">
+                    <div class="signup-section">
+                        <div class = "card">
+                            <div class = "card-header">Phone Verification</div>
+                            <div class = "card-footer">Please enter your phone number.</div>
+                            <div class = "card-content">
+                               <div class = "card-content-inner">
+                                <form action=""> 
+                                    <div class="signup-input">
+                                        <input type="number" class="input-sign-no" name="signum" id="signum">
+                                    </div>
+                                    <div class="pin-input">
+                                        <div class = "row">
+                                            <div class = "col-65">
+                                                <div class="signup-input-2">
+                                                    <input type="number" class="input-pin" name="signpin" id="signpin">
+                                                </div>
+                                            </div>
+                                            <div class = "col-35">
+                                                <div class = "content-block">
+                                                   <a href = "#" class = "button button-big">Resend</a>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </form>
+                               </div>
+                               <div class="signup-btn">
+                                <p class="signup-font">
+                                    You'll receive an SMS to verify identity, but we'll never spam 
+                                 </p>
+                                <div class = "content-block">
+                                    <a href = "#" class = "button button-big">SIGN UP</a>
+                                </div>
+                               </div>
+                               
+                            </div>
+                         </div>
+                        
                     </div>
+                    
+                </div> 
                 </div>
                 </div>
                 
